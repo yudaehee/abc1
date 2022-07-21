@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div>
-		<input type="button" value="Excel Export" onclick="location.href='${contextPath}/member/memberExcelExport'" />
+		
 		<input type="button" value="메인으로" onclick="location.href='${contextPath}/main'" />
 	</div>
 	<h3>회원 리스트</h3>
@@ -20,7 +20,10 @@
 				<td>회원이름</td>
 				<td>성별</td>
 				<td>휴대폰번호</td>
+				<td>이메일</td>
 				<td>주소</td>
+				
+				
 				
 			</tr>
 			<c:choose>
@@ -36,11 +39,8 @@
 							<td>${memberDto.memberName}</td>
 							<td>${memberDto.memberGender}</td>
 							<td>${memberDto.hp1}-${memberDto.hp2}-${memberDto.hp3}</td>
-							<td>
-								${memberDto.regidence}<br> 
-							</td>
-							
-															
+							<td>${memberDto.email}</td>
+							<td>${memberDto.regidence}</td> 
 						</tr>
 					</c:forEach>
 				</c:otherwise>
@@ -49,4 +49,3 @@
 	</table>
 </body>
 </html>
-       

@@ -31,14 +31,14 @@
                                             <i class="icon-users" data-feather="users"></i>
                                             <i class="icon-plus fas fa-plus"></i>
                                         </div>
-                                        <div class="h3 text-primary font-weight-300 mb-0">회원 가입	</div>
+                                        <div class="h3 text-primary font-weight-300 mb-0">로그인	</div>
                                     </div>
                                     <hr class="m-0" />
                                     <div class="card-body p-5">
                                   	<form action="${contextPath}/login" method="POST">
                                       
-                                            <div class="form-group">아이디<input name="memberId" class="form-control form-control-solid" type="text" placeholder="name@example.com" /></div>
-                                            <div class="form-group">비밀번호<input name="memberPw" class="form-control form-control-solid" type="password" placeholder="8자 이상 적어주세요" /></div>
+                                            <div class="form-group">아이디<input name="memberId" id="memberId" class="form-control form-control-solid" type="text"/></div>
+                                            <div class="form-group">비밀번호<input name="memberPw" class="form-control form-control-solid" type="password" /></div>
                                             
                                          	<div class="form-group" align="center"><input type="submit" value="로그인"></div>
                                           

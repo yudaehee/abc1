@@ -25,17 +25,13 @@ public class OrderController {
 	private OrderService orderService;
 	
 	
-	@RequestMapping(value="/ordergood" , method=RequestMethod.GET)
-	public ModelAndView orderEachGoods(@RequestParam("goodsId") int goodsId , @RequestParam("orderGoodsQty") int orderGoodsQty , HttpServletRequest request) throws Exception{
+	@RequestMapping(value="/odergood" , method=RequestMethod.GET)
+	public ModelAndView ordergood(){
 		
 		ModelAndView mv = new ModelAndView();  			
-		mv.setViewName("order/orderGood");
+		mv.setViewName("order/orderGoods");
 		
-		HttpSession session = request.getSession();
-		
-		mv.addObject("orderer" , orderService.getOrdererInfo((String)session.getAttribute("memberInfo")));
-		mv.addObject("goodsInfo" , orderService.getGoodsInfo(goodsId));
-		mv.addObject("orderGoodsQty" , orderGoodsQty);
+	
 		
 		return mv;
 		

@@ -6,9 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.port.abc.admin.order.dao.AdminOrderDao;
 import com.port.abc.order.dto.OrderDto;
-
 
 
 
@@ -16,7 +14,7 @@ import com.port.abc.order.dto.OrderDto;
 public class AdminOrderServiceImpl implements AdminOrderService {
 	
 	@Autowired
-	private AdminOrderDao adminOrderDao;
+	private com.port.abc.admin.order.dao.AdminOrderDao adminOrderDao;
 	
 	@Override
 	public List<OrderDto> listNewOrder() throws Exception{

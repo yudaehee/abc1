@@ -30,74 +30,42 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">일반 도서</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="ecomic">경제</a></li>
-                                <li><a class="dropdown-item" href="workbook">문제집</a></li>
-                                <li><a class="dropdown-item" href="history">역사</a></li>
                                 <li><a class="dropdown-item" href="ani">만화</a></li>
                             </ul>
-                            </li>
-                                
-                                
-                                
+                         </li>
+                               
+                
                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">웹소설&소설</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="web">소설&웹소설</a></li>
-                               
                             </ul>
-                           
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">할인도서</a>
-	                        	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	                        	<li><a class="dropdown-item" href="sale">할인 도서</a></li>
-                        	</ul>
-                        </li>
-                             
-                           
                                
-                     
                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
 	                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	                                <li><a class="dropdown-item" href="#!">리뷰 게시판</a></li>
-	                                <li><a class="dropdown-item" href="#!">자유 게시판</a></li>
-	                                <li><a class="dropdown-item" href="#!">이벤트 게시판</a></li>
-	                            </ul>
-                        </li>
-                    </ul>
+	                                <li><a class="dropdown-item" href="list">리뷰 게시판</a></li>
+		                            </ul>
+	                        </li>
+	                    </ul>
+	                                
                                
-                           
-                   
+                               
                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">      
-                     
-                       
-                     
                         
-                   		 <form class="d-flex">
-                            <li><a class="dropdown-item" href="">주문 배송</a>
-                       
+                        <form class="d-flex">
+                       		 <li><a class="dropdown-item" href="update">회원수정</a>
                      
                         <form class="d-flex">
-                        <li><a class="dropdown-item" href="">출석체크</a>
-                     
-                        <form class="d-flex">
-                        <li><a class="dropdown-item" href="update">회원수정</a>
-                     
-                        <form class="d-flex">
-                        <li><a class="dropdown-item" href="delete">회원탈퇴하기</a>
+                       		 <li><a class="dropdown-item" href="delete">회원탈퇴하기</a>
                        
                         <form class="d-flex">
-                        <li><a class="dropdown-item" href="main">로그아웃</a>
+                        	<li><a class="dropdown-item" href="main">로그아웃</a>
                     </form>
         </nav>
-                       
-                        
-                   
-                      
-                            
-        
+                                
         <!-- Header-->
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
@@ -106,9 +74,7 @@
                     <p class="lead fw-normal text-white-50 mb-0">당신이 알지 못했던 책의 세계를 낱낱이 파헤쳐드립니다</p>
                 </div>
             </div>
-         	     
-            
-           
+                                
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
@@ -136,68 +102,12 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세내용 보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="goodsDetail1">주문하기</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="${contextPath }/resources/ani/401.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">푸른 기억</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">6500원</span>
-                                   5000원
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="${contextPath }/resources/ani/402.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">드래곤 볼</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">6000원</span>
-                                   5000원
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세보기</a></div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
@@ -223,135 +133,19 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="goodsDetail">주문하기</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="${contextPath }/resources/ani/404.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">그리스 로마 신화</h5>
-                                    
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                       
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through"></span>
-                                   8000원
-                                </div>
-                            </div>
+                   
+                   
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">주문하기</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="${contextPath }/resources/ani/405.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">야뇌 백동수</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                       
-                                   </div>
-                                    <!-- Product price-->
-                                    9000원
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="${contextPath }/resources/ani/406.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">우리 사이 느은</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">15000원</span>
-                                    12000원
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="${contextPath }/resources/ani/407.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">열혈강호</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                   15000원
-                                </div>
-                            </div>
-                            
-                            
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">상세보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
                     
-                    
-        
-        <!-- Footer-->
         <footer class="py-5 bg-dark">
          	<div>
 	           &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp;<a class="m-0 text-center text-white">회사 소개</a>&emsp;&emsp; &emsp;&emsp; &emsp;
@@ -367,9 +161,4 @@
         <script src="${contextPath }/resources/js/scripts.js"></script>
     </body>
 </html>
-                                
-                               
-                          
-                        
-                                
-                           
+

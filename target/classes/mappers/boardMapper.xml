@@ -6,19 +6,19 @@
 	<insert id="insertBoard" parameterType="BoardDto">
 		INSERT INTO BOARD(
 			WRITER,
-			EMAIL,
 			SUBJECT,
+			EMAIL,
 			PASSWORD,
 			REG_DATE,
 			READ_COUNT,
 			CONTENT
 		)
-		VLAUE(
+		VALUE(
 			#{writer},
 			#{subject},
 			#{email},
 			#{password},
-			#{regDate},
+			NOW(),
 			#{readCount},
 			#{content}
 		)			
@@ -30,6 +30,33 @@
 		 FROM
 		   		BOARD
 		
+	</select>
+	
+	<select id="getOneBoard" parameterType="int" resultType="BoardDto">
+		SELECT
+				*
+		FROM
+				BOARD
+		WHERE
+				NUM = #{num}
+	</select>
+	
+	<update id="updateReadCount" parameterType="int">
+		UPDATE
+				BOARD
+		SET
+				READ_COUNT = READ_COUNT + 1
+		WHERE
+				NUM = #{num}	
+	</update>
+
+	<select id="validateUserCheck" parameterType="BoardDto" resultType="BoardDto">
+		SELECT 
+				*
+		FROM
+				BOARD
+		WHERE
+				NUM = #{num} AND PASSWORD = #{password}
 	</select>
 	
 	<update id="updateBoard" parameterType="BoardDto">

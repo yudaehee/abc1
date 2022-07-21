@@ -9,6 +9,7 @@ import com.port.abc.member.dto.MemberDto;
 import com.port.abc.order.dto.OrderDto;
 
 
+
 @Repository
 public class OrderDaoImpl implements OrderDao {
 	
@@ -16,17 +17,17 @@ public class OrderDaoImpl implements OrderDao {
 	private SqlSession sqlSession;
 	
 	public void insertNewOrder(OrderDto orderDto) throws Exception{
-		sqlSession.insert("mapper.order.insertNewOrder" , orderDto);
+		sqlSession.insert("mappers.order.insertNewOrder" , orderDto);
 	}
 
 	@Override
 	public MemberDto selectOrdererInfo(String memberId) throws Exception {
-		return sqlSession.selectOne("mapper.order.selectOrdererInfo" , memberId);
+		return sqlSession.selectOne("mappers.order.selectOrdererInfo" , memberId);
 	}
 
 	@Override
 	public GoodsDto selectGoodsInfo(int goodsId) throws Exception {
-		return sqlSession.selectOne("mapper.order.selectGoodsInfo" , goodsId);
+		return sqlSession.selectOne("mappers.order.selectGoodsInfo" , goodsId);
 	}
 
 }

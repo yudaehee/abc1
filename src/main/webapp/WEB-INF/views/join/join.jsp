@@ -86,12 +86,12 @@
                                     <hr class="m-0" />
                                     <div class="card-body p-5">
                                         <form>
-                                            <div>아이디<input class="form-control form-control-solid" type="text" placeholder="name@example.com" name="memberId" id="memberId"/></div>
+                                            <div>아이디<input class="form-control form-control-solid" type="text" name="memberId" id="memberId"/></div>
                                              <input type="button" id="btnOverlapped" value="중복확인" />
                                            
-                                            <div class="form-group">비밀번호<input class="form-control form-control-solid" type="password" name="memberPw" id="memberPw" placeholder="8자 이상 적어주세요"  /></div>
+                                            <div class="form-group">비밀번호<input class="form-control form-control-solid" type="password" name="memberPw" id="memberPw" placeholder="4자 이상 적어주세요"  /></div>
 	                                        
-	                                        <div class="form-group">이름<input class="form-control form-control-solid" type="Name" name="memberName" id="memberName" placeholder="8자 이상 적어주세요"  /></div>
+	                                        <div class="form-group">이름<input class="form-control form-control-solid" name="memberName" id="memberName" /></div>
                                             
                                             <tr>
                                             <td>성별</td>
@@ -100,11 +100,8 @@
                                             <input type="radio"  name="memberGender" value="woman"/> 여성 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                                             </td>
                                             </tr>
-							                
-							                <tr>
 									        
-									        	
-									         	 
+							                <tr>
 									     	  <td> 핸드폰
 									         	 <select name="hp1">
 													<option name="없음 ">없음</option>
@@ -117,23 +114,19 @@
 												<input size="10px" type="text" name="hp3">
 									        </td>
 								        </tr>                         
-												
 								               
-                                            <div class="form-group">지역<input class="form-control form-control-solid" type="text" name="regidence" /></div>
+                                            <div class="form-group">지역<input class="form-control form-control-solid" type="text" name="regidence" placeholder="예시) 서울,미국 등등.."/></div>
                                            
 								                           
+                                            <div class="form-group">이메일<input class="form-control form-control-solid" type="email" name="email" placeholder="정확한 이메일을 적어주세요 문제시 본인책임" /></div>
                                             
-                                                
-                                            <div class="form-group">이메일<input class="form-control form-control-solid" type="email" name="email" /></div>
-                                            
-                                            
-                                                
                                             
                                         <div> <div class="form-group" align="center"><input type="submit" value="가입하기" align="center" ></a>
                                           
                                             <div class="form-group mb-0 text-center">
                                                 Or,
                                                 <tr>
+												
 		        <td colspan="2" align="center">
 		        	이미 회원가입이 되어있다면 ? <a href="login"><strong>로그인하기</strong></a>
 		        </td>
@@ -163,7 +156,7 @@
         </div>
         
     </body>
-	
-       
-
 </html>
+							                
+									        	
+									         	 

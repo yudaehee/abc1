@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.port.abc.admin.goods.dao.AdminGoodsDao;
 import com.port.abc.goods.dto.GoodsDto;
+
 
 
 
@@ -16,7 +16,7 @@ import com.port.abc.goods.dto.GoodsDto;
 public class AdminGoodsServiceImpl implements AdminGoodsService {
 	
 	@Autowired
-	private AdminGoodsDao adminGoodsDao;
+	private com.port.abc.admin.goods.dao.AdminGoodsDao adminGoodsDao;
 	
 	@Override
 	public List<GoodsDto> listNewGoods() throws Exception{

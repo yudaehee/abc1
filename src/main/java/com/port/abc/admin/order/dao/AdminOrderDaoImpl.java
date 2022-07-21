@@ -18,16 +18,16 @@ public class AdminOrderDaoImpl implements AdminOrderDao{
 	private SqlSession sqlSession;
 	
 	public List<OrderDto> selectNewOrderList() throws Exception{
-		return sqlSession.selectList("mapper.admin.order.selectNewOrderList" );
+		return sqlSession.selectList("mapper.admins.order.selectNewOrderList" );
 	}
 	
 	public void  updateDeliveryState(Map<String, String> deliveryMap) throws Exception{
-		sqlSession.update("mapper.admin.order.updateDeliveryState" , deliveryMap);
+		sqlSession.update("mapper.admins.order.updateDeliveryState" , deliveryMap);
 	}
 	
 	
 	public Map<String,Object> selectOrderDetail(int orderId) throws Exception{
-		return sqlSession.selectOne("mapper.admin.order.selectOrderDetail" , orderId);
+		return sqlSession.selectOne("mapper.admins.order.selectOrderDetail" , orderId);
 	}
 
 }

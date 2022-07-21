@@ -44,10 +44,9 @@ public class AdminOrderController {
 	public ModelAndView adminOrderMain(HttpServletRequest request) throws Exception {
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("adminOrder/adminOrderMain");
+		mv.setViewName("/admin/order/adminOrderMain");
 
-		HttpSession session = request.getSession();
-		session.setAttribute("sideMenu", "adminMode"); 
+		
 		
 		List<OrderDto> newOrderList = adminOrderService.listNewOrder();
 		mv.addObject("newOrderList" , newOrderList);
@@ -69,7 +68,7 @@ public class AdminOrderController {
 	public ModelAndView orderDetail(@RequestParam("orderId") int orderId) throws Exception {
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("adminOrder/orderDetail");
+		mv.setViewName("/admin/order/orderDetail");
 		mv.addObject("orderMap", adminOrderService.orderDetail(orderId));
 		
 		return mv;

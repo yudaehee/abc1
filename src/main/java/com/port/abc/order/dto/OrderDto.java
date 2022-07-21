@@ -32,7 +32,20 @@ public class OrderDto {
 	private String cardComName;
 	private String cardPayMonth;
 	private String deliveryState;
+	private String email;
 	
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public int getOrderId() {
 		return orderId;
 	}

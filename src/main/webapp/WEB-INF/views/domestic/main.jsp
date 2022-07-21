@@ -31,7 +31,6 @@
 				   			<li><a class="dropdown-item" >관리자 화면</a></li>
 				   			<li><a class="dropdown-item" href="${contextPath}/memberlist">회원정보</a></li>
 				   			<li><a class="dropdown-item" href="${contextPath}/adminOrderMain">주문현황</a></li>
-				   			<li><a class="dropdown-item" href="${contextPath}/goods">추가주문</a></li>
 				   			<li><a class="dropdown-item" href="${contextPath}/logout">로그아웃</a></li>
 						</c:when>
 			     		<c:when test="${loginUser == true and not empty memberInfo }">
@@ -47,9 +46,10 @@
 			</ul>
 		</div>
 	</div>      
+				   			
                       
         </nav>
-        
+        <
         <!-- Header-->
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">

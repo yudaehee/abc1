@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.admin.order">
+<mapper namespace="mapper.admins.order">
 
 	<select id="selectNewOrderList" resultType="OrderDto">
    		  SELECT  
@@ -27,7 +27,7 @@
 		<result column="GOODS_ID" 			  property="goodsId"/>
 		<result column="GOODS_TITLE" 		  property="goodsTitle"/>
 		<result column="GOODS_DELIVERY_PRICE" property="goodsDeliveryPrice"/>
-		<result column="ORDER_ID" 			  property="orderId"/>
+		<result column="MEMBER_ID" 			  property="memberId"/>
 		<result column="ORDER_GOODS_QTY" 	  property="orderGoodsQty"/>
 		<result column="GOODS_SALES_PRICE"    property="goodsSalesPrice"/>
 		<result column="DELIVERY_METHOD" 	  property="deliveryMethod"/>
@@ -50,8 +50,7 @@
 		<result column="HP1" 				  property="hp1"/>
 		<result column="HP2" 				  property="hp2"/>
 		<result column="HP3" 				  property="hp3"/>
-		<result column="EMAIL1" 			  property="email1"/>
-		<result column="EMAIL2" 			  property="email2"/>
+		
 		<result column="GOODS_FILE_NAME" 	  property="goodsFileName"/>
 	</resultMap>
 	
@@ -83,16 +82,15 @@
 	    		M.MEMBER_NAME				AS MEMBER_NAME,
 	    		M.HP1						AS HP1,
 	    		M.HP2						AS HP2,
-	    		M.HP3						AS HP3,
-	    		M.EMAIL1					AS EMAIL1,
-	    		M.EMAIL2					AS EMAIL2
-	    FROM 
+	    		M.HP3						AS HP3
+	    		
+	      FROM 
 	    		T_ORDER O
-	                  INNER JOIN T_PRODUCT P
-	                          ON O.GOODS_ID = P.GOODS_ID
+	                  INNER JOIN T_GOODS G
+	                          ON O.ORDER_ID = G.GOODS_ID
 	                  INNER JOIN MEMBER M
-	                		  ON O.MEMBER_ID = M.MEMBER_ID
-        WHERE 
+	                		  ON O.ORDER_ID = M.MEMBER_ID
+      	  WHERE 
            		O.ORDER_ID = #{orderId}
 	</select>	
 	

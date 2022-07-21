@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<c:set var="contextPath" value="${pageContext.request.contextPath }"/>
+<<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -358,8 +358,8 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
+
 
                 </nav>
                 <!-- End of Topbar -->
@@ -379,6 +379,7 @@
                             <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
                         </div>
                         <div class="card-body">
+                        <form action="${contextPath}/write" method="GET">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
@@ -389,28 +390,29 @@
                                             <th>작성일</th>
                                             <th>조회수</th>
                                         </tr>
-                                         	<c:forEach var="boardDto" items="${boardList }">
+                                         	<c:forEach var="boardDto" items="${list }">
                                          		<tr>
 					                                <td>${boardDto.num }</td>      		
-					                                <td><a href="${contextPath }/board/boardInfo?num=${boardDto.num}">${boardDto.subject }</a></td>      		
+					                                <td><a href="${contextPath }/Info?num=${boardDto.num}">${boardDto.subject }</a></td>      		
 					                                <td>${boardDto.writer }</td>      		
-					                                <td><fmt:formatDate value="${boardDto.reDate }" pattern="yyyy-MM-dd"/></td>      		
+					                                <td><fmt:formatDate value="${boardDto.regDate }" pattern="yyyy-MM-dd"/></td>      		
 					                                <td>${boardDto.readCount }</td>      		
                                          		</tr>
                                          	</c:forEach>
                                          	<tr>
                                          		<td colspan="5" align="right">
-                                         			<input type="button"  onclick="localtion.href='${contextPath }/board/boardWrite'" value="글쓰기">
+                                         			<input type="submit" value="글쓰기">
                                          		</td>
                                          	</tr>
-                                    </thead>
+                                   		 </thead>
+                               		 </table>
+                           		 </div>
+                        	</div>
+                   		 </div>
+               		 </div>
+             	</form>
                                     
-                                </table>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
                 <!-- /.container-fluid -->
 
             </div>
@@ -430,32 +432,7 @@
         <!-- End of Content Wrapper -->
 
     </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+  
 
     <!-- Bootstrap core JavaScript-->
     <script src="${contextPath}/resources/vendor1/jquery/jquery.min.js"></script>
@@ -465,14 +442,14 @@
     <script src="${contextPath}/resources/vendor1/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+     <script src="${contextPath}/write"></script>
 
     <!-- Page level plugins -->
     <script src="${contextPath}/resources/vendor1/datatables/jquery.dataTables.min.js"></script>
     <script src="${contextPath}/resources/vendor1/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+    <script src="${contextPath}/write"></script>
 
 </body>
 

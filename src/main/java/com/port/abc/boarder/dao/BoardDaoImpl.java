@@ -2,6 +2,8 @@ package com.port.abc.boarder.dao;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -36,11 +38,11 @@ public class BoardDaoImpl  implements BoardDao{
 	}
 	@Override
 	public void update(BoardDto boardDto) {
-		sqlSession.update("boaradMapper.updateBoard", boardDto);
+		sqlSession.update("boardMapper.updateBoard", boardDto);
 	}
 	@Override
 	public BoardDto validateUserCheck(BoardDto boardDto) {
-		return sqlSession.selectOne("boaradMapper.validateUserCheck", boardDto);
+		return sqlSession.selectOne("boardMapper.validateUserCheck", boardDto);
 	}
 	@Override
 	public void delete(int num) {

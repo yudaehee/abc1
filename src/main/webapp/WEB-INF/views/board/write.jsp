@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
 <!DOCTYPE html>
 <html lang="en">
@@ -36,21 +37,21 @@
                                     </div>
                                     <hr class="m-0" />
                                     <div class="card-body p-5">
-                                  	<form action="${contextPath}/" method="">
+                                  	<form action="${contextPath}/write" method="post">
                                       
-                                            <div class="form-group">작성자<input name="" class="form-control form-control-solid" type="text" placeholder="name@example.com" /></div>
-                                            <div class="form-group">제목<input name="" class="form-control form-control-solid" type="text" placeholder="8자 이상 적어주세요" /></div>
-                                            <div class="form-group">이메일<input name="" class="form-control form-control-solid" type="email" placeholder="8자 이상 적어주세요" /></div>
-                                            <div class="form-group">비밀번호<input name="" class="form-control form-control-solid" type="password" placeholder="8자 이상 적어주세요" /></div>
+                                            <div class="form-group">작성자<input name="writer" id="writer" class="form-control form-control-solid" type="text"  /></div>
+                                            <div class="form-group">제목<input name="subject"id="subject" class="form-control form-control-solid" type="text"  /></div>
+                                            <div class="form-group">이메일<input name="email" id="email" class="form-control form-control-solid" type="email"  /></div>
+                                            <div class="form-group">비밀번호<input name="password" id="password"class="form-control form-control-solid" type="password" placeholder="8자 이상 적어주세요" /></div>
                                             <div class="form-group">글쓰기<textarea name="content" id="content" row="100" cols="50" class="form-control form-control-solid" type="content" placeholder="8자 이상 적어주세요" ></textarea></div>
                                             <td>
-                                         			<input type="submit" class="btn btn-primary btn-sm" value="Write" />
+                                         			<input type="submit" class="btn btn-primary btn-sm" value="write" />
 													<input type="reset"  class="btn btn-primary btn-sm" value="Reset" />
-													<input type="button" class="btn btn-primary btn-sm" onclick="location.href='${contextPath }//" value="">
+													<input type="button" class="btn btn-primary btn-sm" onclick="location.href='${contextPath }/list'" value="전체 게시판 보기">
 											</td>
                                             </div>
-                                        </form>
-                                    </div>
+                                   		 </div>
+                                     </form>
                                 </div>
                             </div>
                         </div>

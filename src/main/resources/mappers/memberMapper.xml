@@ -22,7 +22,8 @@
 			HP3	,
 			REGIDENCE ,
 			MEMBER_GENDER,
-			EMAIL 	 
+			EMAIL 	,
+			JOIN_DATE 
 			
 		)
 		VALUES (
@@ -34,7 +35,8 @@
 				#{hp3},
 				#{regidence},
 				#{memberGender},
-				#{email}
+				#{email},
+				now()
 				
 		 )
 				
@@ -75,6 +77,8 @@
 		SET
 				MEMBER_NAME = #{memberName},
 				
+				
+				
 				MEMBER_GENDER = #{memberGender}, 
 				
 				HP1 = #{hp1},  
@@ -85,7 +89,8 @@
 				
 				REGIDENCE = #{regidence}, 
 				
-				EMAIL = #{email}
+				EMAIL = #{email},
+				
 				
 				
 						
@@ -93,7 +98,7 @@
 				MEMBER_ID = #{memberId}
 		
 		
-	</update>	
+	</update>
 
 	<delete id="deleteMember" parameterType="String">
 		DELETE FROM

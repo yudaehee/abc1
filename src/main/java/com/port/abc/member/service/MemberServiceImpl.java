@@ -65,14 +65,11 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public boolean updateMember(MemberDto memberDto) throws Exception{
 		
-		MemberDto dbMemberDto = memberDao.login(memberDto);
+		return true;
 		
-		if(PasswordEncoder.matches(memberDto.getMemberPw() , dbMemberDto.getMemberPw())) {
-			memberDao.updateMember(memberDto);
-			return true;
-		}
-		return false;
 	}
+		 
+		
 		
 	public boolean deleteMember(MemberDto memberDto) throws Exception {
 		

@@ -28,7 +28,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="main">웹소설&소설</a>
+                <a class="navbar-brand" href="main"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -38,54 +38,29 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">일반 도서</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="ecomic">경제</a></li>
-                                <li><a class="dropdown-item" href="workbook">문제집</a></li>
-                                <li><a class="dropdown-item" href="history">역사</a></li>
                                 <li><a class="dropdown-item" href="ani">만화</a></li>
                             </ul>
-                        
-                                
-                           
                         </li>
+                              
+                           
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">웹소설&소설</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="web">소설&웹소설</a></li>
                                
                             </ul>
-                           
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">할인도서</a>
-	                        	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	                        	<li><a class="dropdown-item" href="sale">할인 도서</a></li>
-                        	</ul>
-                        </li>
-                       
+                                
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
 	                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	                                <li><a class="dropdown-item" href="#!">리뷰 게시판</a></li>
-	                                <li><a class="dropdown-item" href="#!">자유 게시판</a></li>
-	                                <li><a class="dropdown-item" href="#!">이벤트 게시판</a></li>
+	                                <li><a class="dropdown-item" href="update">리뷰 게시판</a></li>
 	                            </ul>
-                               
-                           
                         </li>
                     </ul>
-                   
+                                
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">      
-                     
-                       
-                       
                         
-                     
-                   		 <form class="d-flex">
-                            <li><a class="dropdown-item" href="">주문 배송</a>
-                       
-                        <form class="d-flex">
-                        <li><a class="dropdown-item" href="">출석체크</a>
-                         
                         <form class="d-flex">
                         <li><a class="dropdown-item" href="update">회원수정</a>
                      
@@ -96,11 +71,6 @@
                         <li><a class="dropdown-item" href="${contextPath}/logout">로그아웃</a>
                        
                     </form>
-                        
-                        
-                    
-                      
-                            
         </nav>
                    
                    <body class="bg-primary">
@@ -123,10 +93,10 @@
                                     <hr class="m-0" />
                                     <div class="card-body p-5">
                                         <form>
-                                            <div>아이디<input class="form-control form-control-solid" type="text" placeholder="name@example.com" name="memberId" id="memberId"/></div>
+                                            <div>아이디<input class="form-control form-control-solid" type="text" name="memberId" id="memberId"/></div>
                                             
                                            
-                                            <div class="form-group">비밀번호<input class="form-control form-control-solid" type="password" name="memberPw" id="memberPw" placeholder="8자 이상 적어주세요"  /></div>
+                                            <div class="form-group">비밀번호<input class="form-control form-control-solid" type="password" name="memberPw" id="memberPw" placeholder="정확한 비밀번호를 입력해주세요"  /></div>
 	                                        
 	                                     
                                             
@@ -161,4 +131,3 @@
         </div>
 </body>
 </html>
-
